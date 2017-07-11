@@ -651,3 +651,32 @@ p.homepage_text {
 }
 
 </style></p>
+
+<!-- begin modal -->
+<style>
+	img {
+		max-width:100%;
+	}
+	.modal-content {
+		background:none;
+		box-shadow:none;
+		border:none;
+	}
+
+</style>
+<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <a href="/category/20027/Newsletter-Signup.html"><img src="/assets/img/modal-newsletter.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+	jQuery(window).load(function(){
+	   setTimeout(function(){
+	       jQuery('#newsletterModal').modal('show');
+	   }, 4000);
+	});
+</script>
